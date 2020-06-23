@@ -4,11 +4,11 @@ public class LapTime {
 
 	private int raceId ; // refers to {@link Race}
 	private int driverId ; // referst to {@link Driver}
-	private int lap ;
+	private Integer lap ;
 	// NOT: only the combination of the 3 fields (raceId, driverId, lap) is guaranteed to be unique
 	private int position ;
 	private String time ; // printable version of lap time
-	private int miliseconds ; // numerical version, sutable for computations
+	private Integer miliseconds ; // numerical version, sutable for computations
 	public LapTime(int raceId, int driverId, int lap, int position, String time, int miliseconds) {
 		super();
 		this.raceId = raceId;
@@ -30,10 +30,10 @@ public class LapTime {
 	public void setDriverId(int driverId) {
 		this.driverId = driverId;
 	}
-	public int getLap() {
+	public Integer getLap() {
 		return lap;
 	}
-	public void setLap(int lap) {
+	public void setLap(Integer lap) {
 		this.lap = lap;
 	}
 	public int getPosition() {
@@ -48,13 +48,11 @@ public class LapTime {
 	public void setTime(String time) {
 		this.time = time;
 	}
-	public int getMiliseconds() {
+	public Integer getMiliseconds() {
 		return miliseconds;
 	}
-	public void setMiliseconds(int miliseconds) {
+	public void setMiliseconds(Integer miliseconds) {
 		this.miliseconds = miliseconds;
 	}
-	
-	
 }
 

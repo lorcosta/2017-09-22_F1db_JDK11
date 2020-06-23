@@ -74,6 +74,30 @@ public class Race {
 	public void setUrl(String url) {
 		this.url = url;
 	}
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + raceId;
+		return result;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Race other = (Race) obj;
+		if (raceId != other.raceId)
+			return false;
+		return true;
+	}
+	@Override
+	public String toString() {
+		return name;
+	}
 	
 	
 
